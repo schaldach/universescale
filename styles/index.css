@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+
+:root{
+  --color1: #000000;
+  --color2: #ffffff;
+  --color3: #c1121f;
+  --color4: #ff0a54;
+  --color5: #ff477e;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 a {
@@ -15,12 +25,52 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.page{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  color: var(--color2);
+  background-color: var(--color1);
+}
+
+.landing{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.title{
+  font-size: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.subtitle{
+  font-size: 30px;
+}
+.landingbuttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.linkbutton{
+  color: var(--color2);
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.linkbutton svg{
+  width: 24px;
+  height: 24px;
+}
+.linkbutton:hover{
+  color: var(--color4);
 }
