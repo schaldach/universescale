@@ -43,6 +43,7 @@ a {
 .title{
   font-size: 60px;
   display: flex;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -74,29 +75,73 @@ a {
 .linkbutton:hover{
   color: var(--color4);
 }
-.astro{
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-  grid-template-columns: 1fr 1fr;
-  width: 100vw;
-  place-items: center;
-  height: 75vh;
-  grid-template-areas: 
-  'image title'
-  'image description';
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
-.imgwrapper{
+.astro{
+  animation: fade 1s linear;
+  display: grid;
+  grid-template-rows: 12.5vh 1fr;
+  grid-template-columns: 1fr auto 1fr;
+  position: relative;
+  column-gap: 30px;
+  width: 100vw;
+  height: 100vh;
+  grid-template-areas: 
+  'title title title'
+  'smallerimg biggerimg description'
+}
+.imgbackground{
+  display: grid;
+  align-items: center;
   width: 100%;
   height: 100%;
-  position: relative;
-  grid-area: image;
+  font-size: 12px;
+}
+.big{
+  grid-area: biggerimg;
+  justify-content: center;
+}
+.small{
+  grid-area: smallerimg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+.small>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 .astrotitle{
+  padding: 0px 50px;
   font-size: 45px;
+  text-align: center;
   grid-area: title;
+  display: grid;
+  align-items: end;
 }
 .astrodescription{
   padding: 0px 30px;
-  font-size: 25px;
+  font-size: 16px;
   grid-area: description;
+  display: grid;
+  align-items: center;
+}
+.astrobutton{
+  position: absolute;
+  bottom: 30px;
+}
+.left{
+  left: 30px;
+}
+.right{
+  right: 30px;
 }
