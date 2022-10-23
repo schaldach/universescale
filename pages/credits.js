@@ -1,3 +1,5 @@
+import LinkButton from "../components/LinkButton";
+
 function Credits() {
     return (
         <div className="landing page">
@@ -7,6 +9,7 @@ function Credits() {
             <div>
                 IMAGENS<br/>NASA IMAGE AND VIDEO LIBRARY
             </div>
+            <LinkButton href='/' name='VOLTAR' right={false}/>
         </div>
     );
 }

@@ -1,11 +1,15 @@
 import Image from 'next/image'
 import LinkButton from '../components/LinkButton';
 import {getSlugs, getPost} from '../lib/posts'
+import {useState, useEffect} from 'react'
 
 function Astro({postData}) {
+    const [shrinkAnimation, startAnimation] = useState(false)
+    useEffect(() => startAnimation(false), [postData])
+
     return (
         <div className='page'>
-        <div className="astro">
+        <div className={shrinkAnimation?'astro darkpage':'astro fadepage'}>
             <div className='imgbackground big'>
                 <Image src={postData.bigImage} layout='fixed' width='500px' height='500px'/>
             </div>
@@ -17,8 +21,8 @@ function Astro({postData}) {
             </div>
             <div className='astrotitle'>{postData.title.toUpperCase()}</div>
             <div className='astrodescription'>{postData.description.toUpperCase()}</div>
-            <LinkButton href={`/${postData.previousSlug}`} name='VOLTAR' right={false} extraStyles='left astrobutton'/>
-            <LinkButton href={`/${postData.nextSlug}`} name='AMPLIAR' right={true} extraStyles='right astrobutton'/>
+            <LinkButton startAnimation={startAnimation} href={`/${postData.previousSlug}`} name='VOLTAR' right={false} extraStyles='left astrobutton'/>
+            <LinkButton startAnimation={startAnimation} href={`/${postData.nextSlug}`} name='AMPLIAR' right={true} extraStyles='right astrobutton'/>
         </div>
         </div>
     );
