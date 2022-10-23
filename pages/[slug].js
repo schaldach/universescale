@@ -17,8 +17,8 @@ function Astro({postData}) {
             </div>
             <div className='astrotitle'>{postData.title.toUpperCase()}</div>
             <div className='astrodescription'>{postData.description.toUpperCase()}</div>
-            <LinkButton href='/' name='VOLTAR' right={false} extraStyles='left astrobutton'/>
-            <LinkButton href={`/${postData.nextScale}`} name='AMPLIAR' right={true} extraStyles='right astrobutton'/>
+            <LinkButton href={`/${postData.previousSlug}`} name='VOLTAR' right={false} extraStyles='left astrobutton'/>
+            <LinkButton href={`/${postData.nextSlug}`} name='AMPLIAR' right={true} extraStyles='right astrobutton'/>
         </div>
         </div>
     );
