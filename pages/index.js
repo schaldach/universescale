@@ -10,7 +10,7 @@ export default function Home() {
         <div className='subtitle'>POR GABRIEL MORGADO</div>
       </div>
       <div className='landingbuttons'>
-        <LinkButton href='/first' name='COMEÇAR' right={true}/>
+        <LinkButton href='/terra' name='COMEÇAR' right={true}/>
         <LinkButton href='/credits' name='CRÉDITOS' right={true}/>
       </div>
     </div>
