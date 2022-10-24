@@ -2,7 +2,7 @@ import Image from 'next/image'
 import LinkButton from '../components/LinkButton';
 import {getSlugs, getPost} from '../lib/posts'
 import {useState, useEffect} from 'react'
-import background from '../public/background.png'
+import background from '../public/background2.jpg'
 
 function Astro({postData}) {
     const [shrinkAnimation, startAnimation] = useState(false)
@@ -11,7 +11,7 @@ function Astro({postData}) {
     useEffect(() => startAnimation(false), [postData])
 
     return (
-        <div className='page bg' /*style={{backgroundImage: `url(${background.src})`}}*/>
+        <div className='page bg' style={{backgroundImage: `url(${background.src})`}}>
         <div className={shrinkAnimation?'astro darkpage':'astro'}>
             <div className='imgbackground big' style={{right:shrinkAnimation?'340px':'0px', transform:shrinkAnimation?`scale(${shrinkSize})`:'', transition: shrinkAnimation?'all 1.3s linear':'', bottom:shrinkAnimation?'10px':'0px'}}>
                 <Image src={postData.bigImage} layout='fixed' width='500px' height='500px'/>

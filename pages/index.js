@@ -1,10 +1,10 @@
 import React from 'react'
-import background from '../public/background.png'
+import background from '../public/background.jpg'
 import LinkButton from '../components/LinkButton'
 
 export default function Home() {
   return (
-    <div className='landing page bg' /*style={{backgroundImage: `url(${background.src})`}}*/>
+    <div className='landing page bg' style={{backgroundImage: `url(${background.src})`}}>
       <div className='title'>
         A ESCALA DO UNIVERSO
         <div className='subtitle'>POR GABRIEL MORGADO</div>

@@ -1,8 +1,9 @@
 import LinkButton from "../components/LinkButton";
+import background from '../public/background.jpg'
 
 function Credits() {
     return (
-        <div className="landing page bg">
+        <div className="landing page bg" style={{backgroundImage: `url(${background.src})`}}>
             <div className="credits">
             <div>
                 CRIADO POR<br/>GABRIEL SCHALDACH MORGADO
@@ -11,7 +12,7 @@ function Credits() {
                 IMAGENS<br/>NASA IMAGE AND VIDEO LIBRARY
             </div>
             <div>
-                BACKGROUND<br/>STACK FINDOVER
+                BACKGROUND<br/>STACK FINDOVER<br/>LUBO MINAR<br/>NASA
             </div>
             <div>
                 DESCRIÇÕES ADAPTADAS<br/>WIKIPEDIA
