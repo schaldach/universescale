@@ -12,7 +12,7 @@ function Astro({postData}) {
     return (
         <div className='page'>
         <div className={shrinkAnimation?'astro darkpage':'astro'}>
-            <div className='imgbackground big' style={{right:shrinkAnimation?'350px':'0px', transform:shrinkAnimation?`scale(${shrinkSize})`:'', transition: shrinkAnimation?'all 1s linear':''}}>
+            <div className='imgbackground big' style={{right:shrinkAnimation?'340px':'0px', transform:shrinkAnimation?`scale(${shrinkSize})`:'', transition: shrinkAnimation?'all 1s linear':'', bottom:shrinkAnimation?'10px':'0px'}}>
                 <Image src={postData.bigImage} layout='fixed' width='500px' height='500px'/>
             </div>
             <div className='imgbackground small'>
