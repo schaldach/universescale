@@ -41,6 +41,7 @@ a {
   gap: 50px;
 }
 .title{
+  font-weight: 700;
   font-size: 60px;
   display: flex;
   text-align: center;
@@ -50,6 +51,7 @@ a {
   gap: 10px;
 }
 .subtitle{
+  font-weight: 400;
   font-size: 30px;
 }
 .landingbuttons{
@@ -76,10 +78,10 @@ a {
   color: var(--color4);
 }
 @keyframes fade{
-  0%{
+  from{
     opacity: 0;
   }
-  100%{
+  to{
     opacity: 1;
   }
 }
@@ -104,6 +106,7 @@ a {
 }
 .big{
   grid-area: biggerimg;
+  position: relative;
   animation: fade 1s linear;
   justify-content: center;
 }
@@ -119,6 +122,9 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+.small>div>div{
+  animation: fade 1s linear;
 }
 .astrotitle{
   animation: fade 1s linear;
@@ -147,21 +153,10 @@ a {
 .right{
   right: 30px;
 }
-.darkpage .big{
-  animation: shrink 1.5s linear;
-}
-.darkpage .small, .darkpage .astrodescription{
+.darkpage .small, .darkpage .astrodescription, .darkpage .astrotitle{
   opacity: 0;
+  animation: none;
 }
-@keyframes shrink{
-  0%{
-    position: relative;
-    right: 0px;
-    transform: scale(1);
-  }
-  100%{
-    position: relative;
-    transform: scale(0.4);
-    right: 200px;
-  }
+.darkpage .big{
+  animation: none;
 }
