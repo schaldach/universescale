@@ -161,7 +161,7 @@ a {
 .right{
   right: 30px;
 }
-.darkpage .small, .darkpage .astrodescription, .darkpage .astrotitle{
+.darkpage .small, .darkpage .astrodescription, .darkpage .astrotitle, .darkpage .astrobutton{
   opacity: 0;
   animation: none;
 }
