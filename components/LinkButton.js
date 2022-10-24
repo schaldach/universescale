@@ -3,7 +3,7 @@ import Router from 'next/router'
 function LinkButton({href, name, right, extraStyles, startAnimation}) {
     async function onShrink(){
         startAnimation(true)
-        await new Promise(r => setTimeout(r, 1000))
+        await new Promise(r => setTimeout(r, 500))
         Router.push(href)
     }
 
