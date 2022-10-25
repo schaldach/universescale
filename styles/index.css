@@ -135,6 +135,7 @@ a {
 }
 .small>div>div{
   animation: fade 1s linear;
+  text-align: center;
 }
 .astrotitle{
   animation: fade 1s linear;

@@ -22,7 +22,7 @@ function Astro({postData}) {
             <div className='imgbackground small'>
                 <div>
                     <Image src={postData.previous.image} layout='fixed' width={`${Math.ceil(500*smallSize)}px`} height={`${Math.ceil(500*smallSize)}px`}/>
-                    <div>{postData.previous.title.toUpperCase()} PARA ESCALA</div>
+                    <div>{postData.previous.title.toUpperCase()}<br/>PARA ESCALA</div>
                 </div>
             </div>
             <div className='astrotitle'>{postData.p.title.toUpperCase()}</div>
