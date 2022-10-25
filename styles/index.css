@@ -106,11 +106,12 @@ a {
   'smallerimg biggerimg description'
 }
 .imgbackground{
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   height: 100%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .big{
   grid-area: biggerimg;
@@ -120,16 +121,17 @@ a {
 }
 .small{
   grid-area: smallerimg;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: end;
 }
-.small>div{
+.small>div, .big>div{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+.big>div>div{
+  color: var(--color4);
 }
 .small>div>div{
   animation: fade 1s linear;
