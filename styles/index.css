@@ -43,6 +43,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  padding: 0px 60px;
 }
 .landing{
   display: flex;
@@ -66,7 +67,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .subtitle{
   font-weight: 400;
@@ -115,6 +116,7 @@ a {
   'title title title'
   'smallerimg biggerimg description'
 }
+
 .imgbackground{
   display: flex;
   flex-direction: column;
@@ -163,6 +165,10 @@ a {
   grid-area: description;
   display: grid;
   align-items: center;
+}
+.topastrobutton{
+  position: absolute;
+  top: 30px;
 }
 .astrobutton{
   position: absolute;
