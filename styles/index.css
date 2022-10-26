@@ -34,6 +34,16 @@ a {
   background-color: var(--color1);
 }
 
+.ending div:not(.star-field){
+  animation: fade 4s linear;
+}
+.ending{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 .landing{
   display: flex;
   flex-direction: column;
