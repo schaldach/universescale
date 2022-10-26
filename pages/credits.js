@@ -9,7 +9,7 @@ function Credits() {
                 CRIADO POR<br/>GABRIEL SCHALDACH MORGADO
             </div>
             <div>
-                IMAGENS<br/>NASA IMAGE AND VIDEO LIBRARY<br/>HUBBLE TELESCOPE<br/>EVENT HORIZON TELESCOPE
+                IMAGENS<br/>NASA IMAGE AND VIDEO LIBRARY<br/>HUBBLE TELESCOPE<br/>EVENT HORIZON TELESCOPE<br/>ESO TELESCOPE
             </div>
             <div>
                 BACKGROUND<br/>STACK FINDOVER<br/>LUBO MINAR<br/>NASA
